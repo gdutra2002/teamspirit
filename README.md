@@ -2,22 +2,24 @@
 
 ## 10 Object-Oriented Programming: Team Profile Generator
 
-## Your Task
+https://github.com/gdutra2002/teamspirit
 
-Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
+## Your HR
 
-Because this Challenge will require the use of the `Inquirer` package, ensure that you install and use Inquirer version 8.2.4. To do so, use the following command in your project folder: `npm i inquirer@8.2.4`.
+A Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
 
-Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
+Requires the use of the `Inquirer` package version 8.2.4. To do so, use the following command in your project folder: `npm i inquirer@8.2.4`.
 
-Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project.
+Testing is key to making code maintainable, so there is a unit test for every part of your code ensuring that it passes each test.
 
-> **Note**: There is no starter code for this assignment.
+Here is a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project.
+
+> **Note**: There is no way but UP!
 
 ## User Story
 
 ```md
-AS A manager
+AS An HR manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
 ```
@@ -46,19 +48,17 @@ THEN I exit the application, and the HTML is generated
 
 ## Mock-Up
 
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
+The following image shows a mock-up of the generated HTML’s appearance and functionality: Insert screeenshot here!
 
 ![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
 
-The styling in the image is just an example, so feel free to add your own.
-
 ## Getting Started
 
-This Challenge will combine many of the skills we've covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help get started.
+In addition to the User Story and Acceptance Criteria, see the following additional Guidelines.
 
-Because this Challenge will require a video submission, refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
+To learn more about video submission, refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
 
-Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. The application will be invoked by using the following command:
+The application uses [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. The application will be invoked by using the following command:
 
 ```bash
 node index.js
@@ -129,7 +129,7 @@ Finally, although it’s not a requirement, consider adding validation to ensure
 
 ## Grading Requirements
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+> **Note**: “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
 >
 > * A repository that has no code
 >
