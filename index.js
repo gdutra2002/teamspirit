@@ -1,3 +1,5 @@
+const jest = require('jest');
+
 // TODO: Include packages needed for this application
 
 const inquirer = require('inquirer');
@@ -13,22 +15,22 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'name',
-      message: 'What is the name of the application repository?',
+      message: 'What is your full legal?',
     },
     {
       type: 'input',
       name: 'motivation',
-      message: 'What was your motivation?',
+      message: 'What was your motivation to apply for this job?',
     },
     {
       type: 'input',
       name: 'why',
-      message: 'Why did you build this project?',
+      message: 'Why did you select to apply at this company?',
     },
     {
       type: 'input',
       name: 'problem',
-      message: 'What problem does it solve?',
+      message: 'What was an example of a problem to solve in work or life?',
     },
     {
       type: 'input',
@@ -38,7 +40,7 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'address',
-      message: 'What is the url of the live webpage?',
+      message: 'What is the url of your personal webpage or blog?',
     },
     {
       type: 'input',
@@ -48,16 +50,16 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'license',
-      message: 'Add the license information?',
+      message: '(Managers only) Add at least one professional license information.',
     },
     {
       type: 'input',
       name: 'badges',
-      message: 'Enter your badge URL?',
+      message: '(Interns only) Enter a social media platform and user name.',
     },
     {
       type: 'checkbox',
-      message: 'What main languages does the app use?',
+      message: '(Engineers only) What main languages do you use to code?',
       name: 'stack',
       choices: ['HTML', 'CSS', 'github', 'npm inquery', 'terminal', 'APIs', 'jQuery','JavaScript', 'MySQL', 
               'Node.js', 'Express.js', 'MERN', 'State','MongoDB','Python', 'Fetch', 'Handelbars' , 'React'],
@@ -87,7 +89,7 @@ const promptUser = () => {
 };
 
 
-const generateMD = ({ name, motivation, why, problem, learn, address, credits, license, badges, stack, contact, github, email, linkedin }) =>
+const generateHTML = ({ name, motivation, why, problem, learn, address, credits, license, badges, stack, contact, github, email, linkedin }) =>
 
 `# ${name}
 
@@ -149,8 +151,8 @@ ${linkedin}`;
       promptUser()
       // Use writeFile method imported from fs.promises to use promises instead of
       // a callback function
-      .then((answers) => writeFile('readme.md', generateMD(answers)))
-      .then(() => console.log('Successfully wrote to readme.md'))
+      .then((answers) => writeFile('teamspirit.html', generateHTML(answers)))
+      .then(() => console.log('Successfully wrote to teamspirit.html'))
       .catch((err) => console.error(err));
 };
 
