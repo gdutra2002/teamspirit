@@ -1,11 +1,11 @@
-const Employee = require('./employee');
-const { manager } = require('./manager');
-const { intern } = require('./intern');
-const { engineer } = require('./engineer');
+const Employee = require('./lib/employee');
+const { manager } = require('./lib/manager');
+const { intern } = require('./lib/intern');
+const { engineer } = require('./lib/engineer');
 
 const employee = new Employee("The Company", manager, intern, engineer);
 
-store.welcome();
+employee.welcome();
 
 
 // TODO: Include packages needed for this application
@@ -22,7 +22,7 @@ const promptUser = () => {
       return inquirer.prompt([
     {
       type: 'input',
-      name: 'name',
+      name: 'Fullname',
       message: 'What is your full legal?',
     },
     {
@@ -90,14 +90,14 @@ const promptUser = () => {
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'id',
+      message: 'Enter your 6 digit DOB.',
     },
   ])
 };
 
 
-const generateHTML = ({ name, motivation, why, problem, learn, address, credits, license, badges, stack, contact, github, email, linkedin }) =>
+const generateHTML = ({ Fullname, motivation, why, problem, learn, address, credits, license, badges, stack, contact, github, email, id }) =>
 
 `
 <!DOCTYPE html>
@@ -138,7 +138,7 @@ const generateHTML = ({ name, motivation, why, problem, learn, address, credits,
                   <a href="https://github.com/gdutra2002">Employees</a>
               </button>
               <h1>Link to all Employees </h1>    
-              ${name}  
+              ${Fullname}  
               <h2> ${email} </h2>
             </section>
       </div>
@@ -161,7 +161,7 @@ const generateHTML = ({ name, motivation, why, problem, learn, address, credits,
               </button>
               <h1>Money Marketing and Monkey Business</h1>
               <h2> ${license} </h2>
-              <h3> ${linkedin} </h3>
+              <h3> ${id} </h3>
             </section>
       </div>
 
@@ -188,7 +188,7 @@ const generateHTML = ({ name, motivation, why, problem, learn, address, credits,
         </div>
         <div>
           <h3>Today's Roster</h3>
-          <span> ${name} </span>
+          <span> ${Fullname} </span>
           <span> ${address} </span>
           ${contact}
           <h2> ${email} </h2>
