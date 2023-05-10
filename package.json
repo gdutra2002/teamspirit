@@ -1,13 +1,20 @@
 {
       "name": "teamspirit",
-      "version": "1.0.0",
-      "description": "",
+      "version": "1.1.1",
+      "description": "HR app",
       "main": "index.js",
-      "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+      "directories": {
+        "test": "test"
       },
-      "author": "",
-      "license": "ISC",
+      "scripts": {
+        "start": "node index.js",
+        "test": "jest"
+      },
+      "author": "GD",
+      "license": "MIT",
+      "devDependencies": {
+        "jest": "^29.5.0"
+      },
       "dependencies": {
         "inquirer": "^8.2.4"
       }
