@@ -4,14 +4,19 @@ const { intern } = require('./lib/intern');
 const { engineer } = require('./lib/engineer');
 
 const employee = new Employee("The Company", manager, intern, engineer);
+// ^^^
 
-employee.welcome();
+// employee.welcome();
+
+// var questions
+
+
 
 
 // TODO: Include packages needed for this application
-// const inquirer = require('inquirer');
-// const jest = require('jest');
-// const fs = require('fs');
+const inquirer = require('inquirer');
+const jest = require('jest');
+const fs = require('fs');
 
 const { writeFile } = require('fs').promises;
 
@@ -22,7 +27,7 @@ const promptUser = () => {
       return inquirer.prompt([
     {
       type: 'input',
-      name: 'Fullname',
+      name: 'fullname',
       message: 'What is your full legal?',
     },
     {
@@ -97,7 +102,7 @@ const promptUser = () => {
 };
 
 
-const generateHTML = ({ Fullname, motivation, why, problem, learn, address, credits, license, badges, stack, contact, github, email, id }) =>
+const generateHTML = ({ fullname, motivation, why, problem, learn, address, credits, license, badges, stack, contact, github, email, id }) =>
 
 `
 <!DOCTYPE html>
@@ -138,7 +143,7 @@ const generateHTML = ({ Fullname, motivation, why, problem, learn, address, cred
                   <a href="https://github.com/gdutra2002">Employees</a>
               </button>
               <h1>Link to all Employees </h1>    
-              ${Fullname}  
+              ${fullname}  
               <h2> ${email} </h2>
             </section>
       </div>
@@ -188,7 +193,7 @@ const generateHTML = ({ Fullname, motivation, why, problem, learn, address, cred
         </div>
         <div>
           <h3>Today's Roster</h3>
-          <span> ${Fullname} </span>
+          <span> ${fullname} </span>
           <span> ${address} </span>
           ${contact}
           <h2> ${email} </h2>
