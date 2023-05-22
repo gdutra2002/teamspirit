@@ -259,7 +259,10 @@ const generateHTML = ({ fullname, motivation, why, problem, learn, address, cred
       // Use writeFile method imported from fs.promises to use promises instead of
       // a callback function
       .then((answers) => writeFile('teamspirit.html', generateHTML(answers)))
-      .then(() => console.log('Successfully wrote to teamspirit.html'))
+      .then(() => {console.log('Successfully wrote to teamspirit.html')
+            promptUser()
+})
+      
       .catch((err) => console.error(err));
 };
 
