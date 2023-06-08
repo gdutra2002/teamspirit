@@ -1,33 +1,44 @@
-class MAX{
-      render () {
-//             return      
-//       .then((answers) =>
-//       writeFile("teamspirit.html", generateHTML(answers))
-//     )
-//     .then(() => {
-//       console.log("Successfully wrote to teamspirit.html");
-//       promptUser();
-//     })
+const { writeFile } = require("fs").promises;
 
-// .then(() => {
-// const
-return generateHTML = ({
-  fullname,
-  motivation,
-  why,
-  problem,
-  learn,
-  address,
-  credits,
-  license,
-  badges,
-  stack,
-  contact,
-  github,
-  email,
-  id,
-}) =>
-  `
+class MAX {
+  constructor() {
+    this.employeeElement = "";
+  }
+
+  render() {
+                return {
+          // .then((answers) =>
+          // writeFile("teamspirit.html", generateHTML(answers))
+        // )
+        // .then(() => {
+          // console.log("Successfully wrote to teamspirit.html");
+          // promptUser();
+        // })
+
+    // .then(() => {
+
+    setEmployee(employee) {
+      this.employeeElement = employee.render();
+    }
+
+    ,
+    const: generateHTML() = ({
+      fullname,
+      motivation,
+      why,
+      problem,
+      learn,
+      address,
+      credits,
+      license,
+      badges,
+      stack,
+      contact,
+      github,
+      email,
+      id,
+    }) =>
+      `
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -160,47 +171,44 @@ return generateHTML = ({
 </body>
 </html>
 
-`;
+`,
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+    // TODO: Create a function to write README file
+    // function writeToFile(fileName, data) {}
 
-// .then((data) => {
-//       const filename = `${data.name.toLowerCase().split('').join('')}.md`;
+    // .then((data) => {
+    //       const filename = `${data.name.toLowerCase().split('').join('')}.md`;
 
-//       fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-//         err ? console.log(err) : console.log('Success!')
-//       );
-//     });
+    //       fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
+    //         err ? console.log(err) : console.log('Success!')
+    //       );
+    //     });
 
-// TODO: Create a function to initialize app
-})
+    // TODO: Create a function to initialize app
+    // }
 
-.then(() => {
-function init() {
-  // const init = () => {
+    // .then(() => {
+    // function init() {
+      const : init = () => {
 
-  promptUser()
-    // Use writeFile method imported from fs.promises to use promises instead of
-    // a callback function
+      promptUser()
+        // Use writeFile method imported from fs.promises to use promises instead of
+        // a callback function
 
-    .then((answers) =>
-      writeFile("teamspirit.html", generateHTML(answers))
-    )
-    .then(() => {
-      console.log("Successfully wrote to teamspirit.html");
-      promptUser();
-    })
+        .then((answers) => writeFile("teamspirit.html", generateHTML(answers)))
+        .then(() => {
+          console.log("Successfully wrote to teamspirit.html");
+          // promptUser();
+        })
 
-    .catch((err) => console.error(err));
+        .catch((err) => console.error(err));
+    }
+
+    // Function call to initialize app
+    ,init(){}
+    // });
+  }
 }
-
-// Function call to initialize app
-init();
-});
-
-
-      }
 }
 
 module.exports = MAX;
