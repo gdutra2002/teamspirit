@@ -151,13 +151,16 @@ class CLI {
         // max.setEmployee(employee);
         return writeFile("teamspirit.html", max.render());
       })
-      .then(() => {
-        console.log("Made for you teamspirit.html");
-      })
+      
       .catch((error) => {
         console.log(error);
         console.log("Wowzers, awww shucks!");
-      });      
+      })
+
+      .then(() => {
+        console.log("Made for you teamspirit.html");
+      })
+      ;      
 
   }
 }

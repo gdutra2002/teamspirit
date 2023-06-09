@@ -19,9 +19,8 @@ class MAX {
 
     setEmployee(employee) {
       this.employeeElement = employee.render();
-    }
-
-    ,
+    },
+    
     const: generateHTML() = ({
       fullname,
       motivation,
