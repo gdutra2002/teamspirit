@@ -23,19 +23,22 @@ class MAX {
     
     const: generateHTML() = ({
       fullname,
+      email,
+      id,
+      officeNumber,
+      github,
+      school,
+
       motivation,
       why,
       problem,
-      learn,
       address,
       credits,
       license,
-      badges,
       stack,
       contact,
-      github,
-      email,
-      id,
+      
+      
     }) =>
       `
 <!DOCTYPE html>
@@ -109,7 +112,7 @@ class MAX {
           <a href="https://gdutra2002.github.io/prework-study-guide/">Interns</a>
       </button>
       <h1>Quick basic social media genius</h1> 
-      <h3> ${badges} </h3>     
+      <h3> ${officeNumber} </h3>     
     </section>
 </div>
 
@@ -150,7 +153,7 @@ class MAX {
           * ${motivation}.
           * ${why}.
           * ${problem}.
-          * ${learn}.
+          * ${school}.
 
           </div>    
     </div>

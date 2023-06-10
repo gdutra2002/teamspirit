@@ -5,29 +5,38 @@
 * Using a preset list of questions, an HTML page is generated based upon input, bypassing the need to modify HTML or javascript code.
 * By invoking a simple command on the terminal, a new roster will be created after the user answers questions, no need to know or modify code.
 * The code is generalized for a company, however, may be modified to be applicable to many types of teams or workforces that have individuals assigned different roles.
-* 
+
 
 ## Installation
 
 https://github.com/gdutra2002/teamspirit
 
-* Clone the code from github, open a terminal in VSCode, invoke the program using the command: node index.js 
+* Clone the code from github.
+* Open a terminal in VSCode.
+* Invoke the program using the command: node index.js 
 
 ```bash
 node index.js
 ```
 * Answer the command propts to generate a roster html file.
 
+* To test new / added features, use the command npm run test at the terminal to invoke jest.
+
+```bash
+npm run test
+```
+
 ## Usage
 >
 > **Note**:
 * Video URL
 * Sample HTML file
-![cat crch](develop/utils/screenshot.png)
-<Br>
-![teamspirit.html](teamspirit.html)
-<Br>
-![teamspirit.html](dist/teamspirit.html)
+
+![teamscreeenshot](teamscreenshot.png)
+
+![teamspirit](https://github.com/gdutra2002/teamspirit/blob/main/dist/teamspirit.html)
+
+![teamspirit](https://gdutra2002.github.io/teamspirit/)
 
 
 
@@ -40,13 +49,13 @@ See MIT license
 
 
 ## Badges
-bad math
+
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 ![Github license](https://img.shields.io/badge/license-MIT-pink.svg)
 
 ### Features
 >
->* HTML,CSS,github,npm inquery,terminal,JavaScript,Node.js
+>* HTML, CSS, github, npm inquery, jest, terminal, JavaScript, Node.js
 >
 
 ## How to Contribute
