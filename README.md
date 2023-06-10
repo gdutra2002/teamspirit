@@ -30,13 +30,14 @@ npm run test
 >
 > **Note**:
 * Video URL
+* https://drive.google.com/file/d/1-UkSeK_D515UGTRdz6Ug215GaX7Rf0Ic/view
 * Sample HTML file
 
 ![teamscreeenshot](teamscreenshot.png)
 
-![teamspirit](https://github.com/gdutra2002/teamspirit/blob/main/dist/teamspirit.html)
+(https://github.com/gdutra2002/teamspirit/blob/main/dist/teamspirit.html)
 
-![teamspirit](https://gdutra2002.github.io/teamspirit/)
+(https://gdutra2002.github.io/teamspirit/)
 
 
 
