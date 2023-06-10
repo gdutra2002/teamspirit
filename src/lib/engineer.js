@@ -8,6 +8,7 @@ class Engineer extends Employee {
     this.github = github;
   }
 
+  // Method which prints all of the info of an engineer.
   printStats() {
     console.log(`Info for ${this.fullname} are as following:`);
     console.log(`View professional examples at ${this.github} repo.`);
