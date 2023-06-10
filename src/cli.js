@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
 // const Employee = require("./lib/employee");
 const MAX = require("./max");
-const  Manager  = require("./lib/manager");
-const Intern  = require("./lib/intern");
+const Manager = require("./lib/manager");
+const Intern = require("./lib/intern");
 const Engineer = require("./lib/engineer");
 // const { Manager, Engineer, Intern } = require("./lib/employee");
 // const employee = new Employee("The Company", manager, intern, engineer);
@@ -34,12 +34,11 @@ class CLI {
           message: "Enter your email address",
         },
         {
-        name: "employeeType",
-        type: "list",
-        message: "Select an employee profile",
-        choices: ["engineer", "intern", "manager"],
-      },
-
+          name: "employeeType",
+          type: "list",
+          message: "Select an employee profile",
+          choices: ["engineer", "intern", "manager"],
+        },
 
         {
           type: "input",
@@ -120,14 +119,13 @@ class CLI {
           name: "github",
           message: "(Engineers only) Enter your GitHub Username",
         },
-       
+
         {
           type: "input",
           name: "id",
           message: "Enter your 6 digit DOB.",
         },
       ])
-
 
       .then(({ name, employeeType, engineer, email }) => {
         let employee;
@@ -151,7 +149,7 @@ class CLI {
         // max.setEmployee(employee);
         return writeFile("teamspirit.html", max.render());
       })
-      
+
       .catch((error) => {
         console.log(error);
         console.log("Wowzers, awww shucks!");
@@ -159,9 +157,7 @@ class CLI {
 
       .then(() => {
         console.log("Made for you teamspirit.html");
-      })
-      ;      
-
+      });
   }
 }
 
